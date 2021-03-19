@@ -1,0 +1,63 @@
+
+
+@media screen and (max-width:500px) {
+
+    .container {
+        background: url(../images/maxresdefault.jpg) no-repeat center ;
+        background-size:cover;
+        height: 100vh;
+        position: relative;
+        
+    }
+    .container .burn {
+        position: absolute;
+        top: 20px;
+        right: 170px;
+        width: 130px;
+        font-weight: 800;
+        display: none;
+    }
+    .container .box {
+        position: absolute;
+        top: 44%;
+        left: 80%;
+        transform: translate(-50%,-50%);
+        width: 130px;
+        font-weight: 600;
+        display: none;
+    }
+    
+    .container .depth1 {
+        margin: 10px auto ;
+        width: 110px;
+    }
+    .container .depth1 li {
+        background: #BBAA8B;
+        border: 1px solid #333;
+        border-radius: 5px;
+        box-shadow: 2px 2px 15px #333;
+        padding: 5px 10px;
+        margin-bottom: 2px;
+    }
+    
+    .menu, .close {
+        display: block;
+        color: #fff;
+        font-size: 30px;
+        position: absolute;
+        top: 10px; right: 20px;
+    }
+    .close {
+        display: none;
+    }
+
+    .container {
+        background: url(../images/hotel.jpg) no-repeat center;
+        background-size: cover;
+        height: 100vh;
+        position: relative;
+        
+    }
+
+
+}
