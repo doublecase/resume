@@ -1,3 +1,3 @@
 # resume
 
-https://doublecase.github.io/resume/.
+https://doublecase.github.io/resume/
