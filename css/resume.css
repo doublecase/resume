@@ -1,0 +1,208 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+/* font-family: 'Inconsolata', monospace; */
+
+header {
+    background: url(../images/fairy-tale-1180921_1920.png) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+header .h1 {
+    position: absolute;
+    top: 80px; left: 50%;
+    transform: translate(-50%);
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    /* line-height: 2.5; */
+    font-family: 'Inconsolata', monospace;
+    font-weight: 500;
+}
+header .h1>span{
+    text-transform: capitalize;
+    white-space: nowrap;
+    color: transparent;
+}
+/* header .h1 > p::before {
+    content: "Hello.";
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    overflow: hidden;
+    border-right: 2px solid white;
+    animation:typing  1s steps(7) both;
+} */
+header .h1 > span::before {
+    content: "Are you wonder me?";
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    color: #fff;
+    overflow: hidden;
+    border-right: 2px solid white;
+    animation:typing 1s steps(15) both;
+}
+
+@keyframes typing {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+
+
+header .cloud {
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    /* position: relative; */
+}
+header .cloud a:first-child {
+    position: fixed;
+    top: 55%; left:12%;
+    width: 280px;
+    animation: ani 3s infinite linear;
+} 
+header .cloud a:first-child span {
+    font-family: 'Inconsolata', monospace;
+    position: absolute;
+    top: 110px; left: 120px;
+}
+header .cloud a:first-child p {
+    font-family: 'Inconsolata', monospace;
+    position: absolute;
+    top: 110px; left: 100px;
+    opacity: 0;
+}  
+
+
+header .cloud a:nth-child(2) {
+    position: fixed;
+    top:33%; left: 33%;
+    width: 250px;
+    animation: ani 3s infinite linear;
+}
+header .cloud a:nth-child(2) span {
+    font-family: 'Inconsolata', monospace;
+    position: absolute;
+    top: 100px; left: 105px;
+}
+header .cloud a:nth-child(2) p {
+    font-family: 'Inconsolata', monospace;
+    position: absolute;
+    top: 100px; left: 85px;
+    opacity: 0;
+}  
+header .cloud a:nth-child(3) {
+    position: fixed;
+    top: 40%; left: 57%;
+    width: 330px;
+    animation: ani 4s infinite linear;
+}
+header .cloud a:nth-child(3) span {
+    font-family: 'Inconsolata', monospace;
+    position: absolute;
+    top: 80px; left: 130px;
+}
+header .cloud a:nth-child(3) p {
+    font-family: 'Inconsolata', monospace;
+    position: absolute;
+    top: 80px; left: 130px;
+    opacity: 0;
+}  
+header .cloud a:last-child {
+    position: fixed;
+    top: 60%; left: 75%;
+    width: 300px;
+    animation: ani 3.5s infinite linear;
+}
+header .cloud a:last-child span {
+    font-weight: 700;
+    font-family: 'Inconsolata', monospace;
+    position: absolute;
+    top: 120px; left: 130px;
+}
+header .cloud a:last-child p {
+    font-family: 'Inconsolata', monospace;
+    position: absolute;
+    top: 120px; left: 110px;
+    opacity: 0;
+}  
+header .cloud a:hover span {
+    opacity: 0;
+}
+header .cloud a:hover p {
+    opacity: 1;
+    color: darkred;
+}
+@keyframes ani {
+    0% {}
+    50%{
+        margin-top: 20px;
+    }
+    100% {
+        margin-bottom: 20px;
+    }
+}
+
+header .icon {
+    color: #fff;
+    font-size: 20px;
+    position: absolute;
+    top: 30px; right: 80px;
+}
+header .icon .fa-sync-alt,
+header .icon .fa-phone,
+header .icon .fa-at {
+    background: #333;
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    line-height: 40px;
+    text-align: center;
+}
+header .icon a:hover i{
+    color: #333;
+    background: #fff;
+}
+
+/* 로딩 */
+.loading {
+    position: fixed;
+    top: 0; left: 0; bottom:0; right: 0;
+    font-size:30px;
+    background: #e7e7e7;
+    z-index:9999999;
+}
+.loading .box {
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%);
+    color:#333;
+    width: 100%;
+}
+.loading .box p:nth-of-type(2) {
+    color: #333;
+    font-size: 50px;
+    margin: 10px 0;
+}
+.loading .box .bar {
+    width:250px;
+    height: 5px;
+    margin: 10px auto 0;
+}
+.loading .box .barani {
+    width: 0%;
+    height: 5px;
+    background: brown;
+}
